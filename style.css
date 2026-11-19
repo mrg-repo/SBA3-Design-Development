@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("./assets/fonts/static/DMSans-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("./assets/fonts/static/DMSans-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("./assets/fonts/static/DMSans-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@media (min-width: 1280px) {
+  main {
+    grid-template-areas:
+      "create hero     hero     schedule"
+      "create manage   maintain schedule"
+      "write  manage   maintain schedule"
+      "write  growth   grow     grow";
+  }
+  .hero-tile     { grid-area: hero; }
+  .manage-tile   { grid-area: manage; }
+  .maintain-tile { grid-area: maintain; }
+  .schedule-tile { grid-area: schedule; }
+  .grow-tile     { grid-area: grow; }
+  .growth-tile   { grid-area: growth; }
+  .create-tile   { grid-area: create; }
+  .write-tile    { grid-area: write; }
+}
