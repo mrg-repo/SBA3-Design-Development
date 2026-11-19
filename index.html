@@ -3,17 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Bento grid</title>
 
   <link rel="stylesheet" href="./style.css"> 
 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            purple: { 100: 'hsl(254, 88%, 90%)', 500: 'hsl(256, 67%, 59%)' },
+            yellow: { 100: 'hsl(31, 66%, 93%)', 500: 'hsl(39, 100%, 71%)' },
+            black: 'hsl(0, 0%, 7%)'
+          },
+          fontFamily: { sans: ['"DM Sans"', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
 </head>
 
-<body>
-  <main>
+<body class="bg-neutral-100 font-sans text-black">
+  <main class="grid gap-8 max-w-xl mx-auto px-4 py-8 md:grid-cols-2 md:max-w-3xl xl:max-w-[1120px] xl:grid-cols-4">
     <article class="hero-tile">
       <h1>Social Media <span>10x</span> <em>Faster</em> with AI</h1>
       <img src="./assets/images/illustration-five-stars.webp" alt="Five stars">
