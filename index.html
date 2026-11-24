@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Bento grid</title>
 
-  <link rel="stylesheet" href="./style.css"> 
+  <link rel="stylesheet" href="./style.css">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -27,14 +29,17 @@
 </head>
 
 <body class="bg-white font-sans text-black">
-  
+
   <main class="grid gap-8 max-w-xl mx-auto px-4 py-8 md:grid-cols-2 md:max-w-3xl xl:max-w-[1120px] xl:grid-cols-4">
-    
-    <article class="hero-tile bg-purple-500 text-white text-center rounded-xl px-6 py-10 flex flex-col items-center gap-4">
-      <h1 class="text-5xl font-medium leading-none">Social Media <span class="text-yellow-500">10x</span> <em>Faster</em> with AI</h1>
+
+    <article
+      class="hero-tile bg-purple-500 text-white text-center rounded-xl px-6 py-10 flex flex-col items-center gap-4">
+      <h1 class="text-5xl font-medium leading-none">Social Media <span class="text-yellow-500">10x</span>
+        <em>Faster</em> with AI
+      </h1>
       <img class="w-48" src="./assets/images/illustration-five-stars.webp" alt="Five stars">
       <p class="text-lg">Over 4,000 5-star reviews</p>
-    </article>  
+    </article>
 
 
     <article class="manage-tile p-6 flex flex-col gap-4">
@@ -55,7 +60,8 @@
       <p class="text-lg">Optimize post timings to publish content at the perfect time for your audience.</p>
     </article>
 
-    <article class="grow-tile bg-purple-500 text-white text-center rounded-xl p-6 flex flex-col gap-4 xl:flex-row xl:items-center xl:text-left">
+    <article
+      class="grow-tile bg-purple-500 text-white text-center rounded-xl p-6 flex flex-col gap-4 xl:flex-row xl:items-center xl:text-left">
       <img class="xl:w-1/2" src="./assets/images/illustration-grow-followers.webp" alt="Follower growth chart">
       <h2 class="text-3xl font-medium leading-none">Grow followers with non-stop content.</h2>
     </article>
@@ -65,11 +71,11 @@
       <p class="text-lg">faster audience growth</p>
       <img class="w-48" src="./assets/images/illustration-audience-growth.webp" alt="Three user avatars">
     </article>
-    
-    <article class="create-tile">
-        <h2>Create and schedule content <em>quicker.</em></h2>
-        <img src="./assets/images/illustration-create-post.webp" alt="Create Post button">
-      </article>
+
+    <article class="create-tile p-6 flex flex-col gap-4 xl:justify-center">
+      <h2 class="text-3xl font-medium leading-none">Create and schedule content <em class="text-purple-500">quicker.</em></h2>
+      <img class="w-48" src="./assets/images/illustration-create-post.webp" alt="Create Post button">
+    </article>
 
     <article class="write-tile">
       <h2>Write your content using AI.</h2>
@@ -77,4 +83,5 @@
     </article>
   </main>
 </body>
+
 </html>
