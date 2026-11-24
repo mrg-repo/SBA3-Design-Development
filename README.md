@@ -33,6 +33,12 @@ Build a responsive bento grid of 8 feature tiles that matches the provided desig
 - **Splitting the grid between Tailwind and CSS.** I used Tailwind to build the grid itself: turning it on, setting 1, 2, or 4 columns by screen size, and controlling the gaps and widths. The one part I moved to CSS was placing each tile in its exact spot on the desktop layout. In Tailwind, that would have meant 3–4 extra position classes on each of the 8 tiles. In CSS, a `grid-template-areas` map draws the same layout in a few readable lines that look like the design.
 - **A gap at tablet size.** The design only included mobile and desktop. While testing screen sizes, I noticed a visual gap: the layout jumped from one column straight to the 4-column desktop grid. I added Tailwind's `md:` breakpoint with a 2-column layout, which made the flow between sizes smoother.
 
+## Reflection
+
+The most tedious part of this project was writing the Tailwind classes for each of the eight tiles. The tiles shared a lot, like padding, rounded corners, and heading styles, but each one also had differences I had to account for. The hardest part was the layout inside each tile. I used Tailwind's flexbox classes (`flex`, `flex-col`, and `gap`) on every tile to stack its heading, image, and text, but getting the spacing right took a lot of adjusting, since some tiles needed an image pushed to the bottom, content centered, or items placed side by side on desktop. To work through this, I read Tailwind's documentation on its flexbox and spacing utilities to better understand how each class worked and how to combine them so each tile matched the design. With more time, I would build the same project with Bootstrap as well, to compare the two frameworks and learn which one is easier to work with for different types of projects.
+
+
+
 ## Author
 
 - GitHub - [mrg-repo](https://github.com/mrg-repo)
